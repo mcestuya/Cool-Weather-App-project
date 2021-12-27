@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/fe419855d7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container box">
+      <h1><span>What's the weather?</span></h1>
+
+      <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search🔍"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+      <div class="card-deck">
+        <div class="mb-3 Mon" style="max-width: 5rem">
+          <div class="card-header">Mon</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">☀️</h5>
+            <p class="card-text">12°C</p>
+          </div>
+
+        </div>
+        <div class="mb-3 Tues" style="max-width: 5rem">
+          <div class="card-header">Tues</div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title">⛅</h5>
+            <p class="card-text">10°C</p>
+          </div>
+        </div>
+        <div class="mb-3 Wed" style="max-width: 5rem">
+          <div class="card-header">Wed</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">☁️</h5>
+            <p class="card-text">7°C</p>
+          </div>
+        </div>
+        <div class="mb-3 Thurs" style="max-width: 5rem">
+          <div class="card-header">Thurs</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">🌨️</h5>
+            <p class="card-text">4°C</p>
+          </div>
+        </div>
+        <div class="mb-3 Fri" style="max-width: 5rem">
+          <div class="card-header">Fri</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">🌨️</h5>
+            <p class="card-text">0°C</p>
+          </div>
+        </div>
+        <div class="mb-3 Sat" style="max-width: 5rem">
+          <div class="card-header">Sat</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">❄️</h5>
+            <p class="card-text">-1°C</p>
+          </div>
+        </div>
+        <div class="mb-3 Sun" style="max-width: 5rem">
+          <div class="card-header">Sun</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">❄️</h5>
+            <p class="card-text">2°C</p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="cityButton  btn-secondary btn-lg btn-block local">
+        <h2 id="city">London, UK</h2>
+             
+        
+          <ul class="nobull">
+
+              <li id=date></li>
+          </ul>
+        <h3 id="currentTemp">°C</h3>
+         <span class="units">
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+                
+                <br>
+        <p> H: <span id= "highest">12</span>°C  || L: <span id="low">8</span>°C </p>
+        <p id=description></p> 
+        <p class="☀️">  Sunrise: <span id=sunrise></span> am || Sunset: <span id=sunset></span>pm</p>
+        <p> </p>
+      </button>
+               <h6 id=currentDate>Sunday 22:49</h3>
+  <p> <a href="https://github.com/mcestuya/my-weather-app">Open Source code</a> 
+                   by Chessa Estuya</p>
+    </div>
+        <script src="src/javascript.js"></script>
+
+  </body>
+</html>

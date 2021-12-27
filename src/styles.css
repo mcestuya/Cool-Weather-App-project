@@ -1,0 +1,91 @@
+.box {
+  display: block;
+  border: 5px solid gray;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding: 50px;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+h3 {
+  font-size: 75px;
+}
+h6 {
+  color: black;
+  text-align: center;
+}
+h1 span {
+  background-color: #fce5e5;
+  margin: auto;
+}
+form {
+  margin: auto;
+  padding: 25px;
+}
+
+input {
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+.search-form {
+  width: 90%;
+  text-align: center;
+}
+
+.submit {
+  width: 70px;
+  background-color: #1c87c9;
+  color: #ffffff;
+}
+.card-deck {
+  text-align: center;
+  justify-content: space-evenly;
+}
+.Mon {
+  border: 1px solid red;
+  color: red;
+}
+.Tues {
+  border: 1px solid orange;
+}
+.Wed {
+  border: 1px solid #e8d734;
+}
+.Thurs {
+  border: 1px solid green;
+}
+.Fri {
+  border: 1px solid cyan;
+}
+.Sat {
+  border: 1px solid blue;
+}
+.Sun {
+  border: 1px solid #7e4ccb;
+}
+
+.local {
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  border-width: thick;
+}
+
+.☀️ {
+  color: #d3d2f1;
+  background-color: #bd72df;
+  font-size: 15px;
+}
+
+.nobull {
+  list-style-type: none;
+}
+p {
+  text-align: center;
+}
