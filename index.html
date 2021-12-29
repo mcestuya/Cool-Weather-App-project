@@ -104,51 +104,49 @@
              
         
           <ul class="nobull">
-
               <li id=date></li>
           </ul>
+         
+         <div class="container">
+			<div class='menu'>
+			  <input class='toggle' id='menu' type='checkbox'>
+			  <label class='style' for='menu'>
         <h3 id="currentTemp">°C</h3>
-         <span class="units">
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
-                
-                <br>
-        <p> H: <span id= "highest">12</span>°C  || L: <span id="low">8</span>°C </p>
+<span class="units">
+                 <small> <a href="#" id="fahrenheit-link">°F</a></small>
+                </span>    			  
+              </label>
+
+    			  <a class='tab' >
+			  	<p class=icon>❄️</p>
+			  </a>
+    			  <a class='tab' >
+			  	<p class=highest>H: <span id= "highest">12</span>°C</p>
+			  </a>
+    			  <a class='tab' >
+               <p id=sunset></p> Sunset (pm)
+
+			  </a>
+    			  <a class='tab' >
         <p id=description></p> 
-        <p class="☀️">  Sunrise: <span id=sunrise></span> am || Sunset: <span id=sunset></span>pm</p>
-        <p> </p>
-      </button>
+			  </a>
+    			  <a class='tab' >
+          <p id=sunrise></p> Sunrise (am)
+			  </a>
+    			  <a class='tab' >
+			  	<P class=lowest>L: <span id="low">8</span>°C </p></P>
+			  </a>
+			</div>
+		</div>
+             
+      
                <h6 id=currentDate>Sunday 22:49</h3>
   <p> <a href="https://github.com/mcestuya/my-weather-app">Open Source code</a> 
                    by Chessa Estuya</p>
     </div>
+    </button>
         <script src="src/javascript.js"></script>
 
-                         <div class="container">
-			<div class='menu'>
-			  <input class='toggle' id='menu' type='checkbox'>
-			  <label class='style' for='menu'>
-			  	<i class="temp" aria-hidden="true">18°</i>
-			  </label>
-			  <a class='tab' href='#'>
-			  	<p class=icon>❄️</p>
-			  </a>
-			  <a class='tab' href='#'>
-			  	<p class=highest>high</p>
-			  </a>
-			  <a class='tab' href='#'>
-			  	<p class=wind>wind</p>
-			  </a>
-			  <a class='tab' href='#'>
-			  	<p class=description>cloudy</p>
-			  </a>
-			  <a class='tab' href='#'>
-			  	<P class=humidity>%</P>
-			  </a>
-			  <a class='tab' href='#'>
-			  	<P class=lowest>low</P>
-			  </a>
-			</div>
-		</div>
+                         
   </body>
 </html>

@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 h3 {
-  font-size: 75px;
+  font-size: 50px;
 }
 h6 {
   color: black;
@@ -77,12 +77,6 @@ input {
   border-width: thick;
 }
 
-.☀️ {
-  color: #d3d2f1;
-  background-color: #bd72df;
-  font-size: 15px;
-}
-
 .nobull {
   list-style-type: none;
 }
@@ -101,19 +95,20 @@ a {
 
 .menu {
   position: relative;
-  margin-top: 10%;
   left: 50%;
   width: 0px;
   transform: translate(-50%, 55%);
+  margin-bottom: 10%;
 }
 
 .toggle {
   display: relative;
+  margin-bottom: 10px;
 }
 
 .toggle + .style {
   width: 200px;
-  height: 124px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
   transform: translate(-50%, -50%) scale(1);
@@ -121,10 +116,9 @@ a {
   display: block;
   max-width: 200px;
   line-height: 10px;
-  margin-bottom: 0;
   background: #7e4ccb;
   color: #fff;
-  font-size: 2.5em;
+  font-size: 1.5em;
   padding-top: 50px;
   font-weight: 700;
   text-align: center;
@@ -192,8 +186,10 @@ a {
 
 .toggle ~ .tab {
   position: absolute;
+  text-align: center;
+  font-size: 12px;
   background: #d3d2f1;
-  color: #fff;
+  color: white;
   width: 120px;
   height: 120px;
   left: 0px;
@@ -212,7 +208,6 @@ a {
 .menu > .toggle:checked ~ .tab:nth-of-type(1) {
   top: -122px;
   left: 0px;
-  transition-delay: 0s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(2) {
@@ -231,6 +226,7 @@ a {
   top: 122px;
   left: 0px;
   transition-delay: 0.375s;
+  font-size: 10px;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(5) {
