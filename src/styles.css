@@ -95,15 +95,15 @@ a {
 
 .menu {
   position: relative;
+  margin-top: 10%;
   left: 50%;
   width: 0px;
   transform: translate(-50%, 55%);
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .toggle {
-  display: relative;
-  margin-bottom: 10px;
+  display: none;
 }
 
 .toggle + .style {
@@ -115,7 +115,7 @@ a {
   z-index: 5;
   display: block;
   max-width: 200px;
-  line-height: 10px;
+  line-height: 20px;
   background: #7e4ccb;
   color: #fff;
   font-size: 1.5em;
@@ -159,8 +159,8 @@ a {
 .toggle + .style:before,
 .toggle + .style:after {
   content: "";
-  position: absolute;
-  margin: -3px;
+  position: relative;
+  margin: -2px;
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -177,6 +177,8 @@ a {
   height: 30px;
   left: 25px;
   top: 10px;
+  position: relative;
+  margin-top: 10%;
 }
 
 .toggle:checked + .style:before,
