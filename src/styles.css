@@ -99,7 +99,7 @@ a {
   left: 50%;
   width: 0px;
   transform: translate(-50%, 55%);
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .toggle {
@@ -177,6 +177,7 @@ a {
   height: 30px;
   left: 25px;
   top: 10px;
+  bottom: 20px;
   position: relative;
   margin-top: 10%;
 }
@@ -207,15 +208,14 @@ a {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.menu > .toggle:checked ~ .tab:nth-of-type(1) {
-  top: -122px;
-  left: 0px;
-}
-
 .menu > .toggle:checked ~ .tab:nth-of-type(2) {
   top: -74px;
   left: 120px;
   transition-delay: 0.125s;
+}
+.menu > .toggle:checked ~ .tab:nth-of-type(1) {
+  top: -122px;
+  left: 0px;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(3) {

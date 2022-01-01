@@ -43,6 +43,7 @@ function formatDate(date) {
 let dateElement = document.querySelector("#currentDate");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
+let iconElement = document.querySelector("#icon");
 
 function displayCurrentWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -58,6 +59,11 @@ function displayCurrentWeather(response) {
   document.querySelector("#low").innerHTML = Math.round(
     response.data.main.temp_min
   );
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
   // document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
   //document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
 
