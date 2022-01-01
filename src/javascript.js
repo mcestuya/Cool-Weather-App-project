@@ -63,6 +63,7 @@ function displayCurrentWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   // document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
   //document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
