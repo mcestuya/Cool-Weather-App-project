@@ -1,9 +1,8 @@
-.box {
+.container-box {
   display: block;
   border: 5px solid gray;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 80;
   margin-right: 150px;
   margin-left: 150px;
   padding: 50px;
@@ -34,7 +33,7 @@ input {
 }
 
 .search-form {
-  width: 90%;
+  width: 80%;
   text-align: center;
 }
 
@@ -44,6 +43,7 @@ input {
   color: #ffffff;
 }
 .card-deck {
+  margin-top: 5%;
   text-align: center;
   justify-content: space-evenly;
 }
@@ -71,7 +71,7 @@ input {
 }
 
 .local {
-  border-radius: 30px;
+  border-radius: 100px;
   background-color: white;
   color: black;
   border-width: thick;

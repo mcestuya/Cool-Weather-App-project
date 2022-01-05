@@ -23,7 +23,6 @@
   <body>
     <div class="container box">
       <h1><span>What's the weather?</span></h1>
-
       <div class="container">
       <div class="weather-app">
         <form class="search-form" id="search-form">
@@ -47,7 +46,56 @@
             </div>
           </div>
         </form>
-      <div class="card-deck">
+     
+      <button type="button" class="cityButton  btn-secondary btn-lg btn-block local">
+        <h2 id="city">London, UK</h2>
+             
+        
+          <ul class="nobull">
+              <li id=date></li>
+          </ul>
+         
+         <div class="container">
+			<div class='menu'>
+			  <input class='toggle' id='menu' type='checkbox'>
+			  <label class='style' for='menu'>
+        <h3 id="currentTemp">°C</h3>
+<span class="units">
+                 <small> <a href="#" id="fahrenheit-link">°F</a></small>
+                </span>    			  
+              </label>
+
+    			  <a class='tab' >
+              <img src="" alt="weather" id="icon">
+			  	
+			  </a>
+    			  <a class='tab' >
+			  	<p class=highest>H: <span id= "highest">12</span>°C</p>
+			  </a>
+    			  <a class='tab' >
+               <p id=sunset></p> Sunset (pm)
+
+			  </a>
+    			  <a class='tab' >
+        <p id=description></p> 
+			  </a>
+    			  <a class='tab' >
+          <p id=sunrise></p> Sunrise (am)
+			  </a>
+    			  <a class='tab' >
+			  	<P class=lowest>L: <span id="low">8</span>°C </p></P>
+			  </a>
+			</div>
+		</div>
+      <br>
+     <small><p>Last updated:</p></small>
+               <h4 id=currentDate>Sunday 22:49</h4>
+  <p> <a href="https://github.com/mcestuya/my-weather-app">Open Source code</a> 
+                   by Chessa Estuya</p>
+    </div>
+    </button>
+
+     <div class="card-deck">
         <div class="mb-3 Mon" style="max-width: 5rem">
           <div class="card-header">Mon</div>
           <div class="card-body text-primary">
@@ -99,53 +147,6 @@
           </div>
         </div>
       </div>
-      <button type="button" class="cityButton  btn-secondary btn-lg btn-block local">
-        <h2 id="city">London, UK</h2>
-             
-        
-          <ul class="nobull">
-              <li id=date></li>
-          </ul>
-         
-         <div class="container">
-			<div class='menu'>
-			  <input class='toggle' id='menu' type='checkbox'>
-			  <label class='style' for='menu'>
-        <h3 id="currentTemp">°C</h3>
-<span class="units">
-                 <small> <a href="#" id="fahrenheit-link">°F</a></small>
-                </span>    			  
-              </label>
-
-    			  <a class='tab' >
-              <img src="" alt="weather" id="icon">
-			  	
-			  </a>
-    			  <a class='tab' >
-			  	<p class=highest>H: <span id= "highest">12</span>°C</p>
-			  </a>
-    			  <a class='tab' >
-               <p id=sunset></p> Sunset (pm)
-
-			  </a>
-    			  <a class='tab' >
-        <p id=description></p> 
-			  </a>
-    			  <a class='tab' >
-          <p id=sunrise></p> Sunrise (am)
-			  </a>
-    			  <a class='tab' >
-			  	<P class=lowest>L: <span id="low">8</span>°C </p></P>
-			  </a>
-			</div>
-		</div>
-      <br>
-     <small><p>Last updated:</p></small>
-               <h4 id=currentDate>Sunday 22:49</h4>
-  <p> <a href="https://github.com/mcestuya/my-weather-app">Open Source code</a> 
-                   by Chessa Estuya</p>
-    </div>
-    </button>
         <script src="src/javascript.js"></script>
 
                          
