@@ -39,22 +39,32 @@ function formatDate(date) {
   let month = months[monthIndex];
   return `${day}, ${todayDate} ${month} ${hours}:${minutes}`;
 }
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thurs", "Fri", "Sat", "Sun", "Mon"];
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
               <div class="Mon">
                  <div class="weather-forecast-date">
-
-                            ${day}
-                <img src="http://openweathermap.org/img/wn/01n@2x.png" alt="" width="42">
-                <div class ="weather-forecast-temperatures"> <span class="weather-forecast-max"> 18 °</span><span class="weather-forecast-min"> 12 °</span> </div>
+                            ${formatDay(forecastDay.dt)}
+            <img src="http://openweathermap.org/img/wn/${
+              forecastDay.weather[0].icon
+            }@2x.png" alt="" width="42">
+                <div class ="weather-forecast-temperatures"> <span class="weather-forecast-max"> ${
+                  forecastDay.temp.max
+                }°</span><span class="weather-forecast-min">  ${
+        forecastDay.temp.min
+      }°</span> </div>
               </div>
               </div>
               </div>
