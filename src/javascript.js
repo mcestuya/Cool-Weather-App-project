@@ -103,6 +103,11 @@ function displayCurrentWeather(response) {
   document.querySelector("#highest").innerHTML = Math.round(
     response.data.main.temp_max
   );
+
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#low").innerHTML = Math.round(
     response.data.main.temp_min
   );
@@ -111,19 +116,6 @@ function displayCurrentWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
-  // document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-  //document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
-
-  let sunsetTimeStamp = (document.querySelector("#sunset").innerHTML =
-    response.data.sys.sunset);
-  var date = new Date(sunsetTimeStamp * 1000);
-  var hours = date.getHours();
-  var minutes = "0" + date.getMinutes();
-  var formattedTimeSet = hours + ":" + minutes.substr(-2);
-  document.querySelector("#sunset").innerHTML = formattedTimeSet;
-  console.log(formattedTimeSet);
 }
 
 function onLoad(city) {
@@ -142,3 +134,14 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
 
 onLoad("London");
+
+var d = new Date();
+var h = d.getHours();
+if (h < 6)
+  document.write(
+    '<style type="text/css">body{background: url(src/evening.jpg) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}"></style>'
+  );
+else if (h < 18)
+  document.write(
+    '<style type="text/css">body{background: url(src/morning.jpg)  no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}"></style>'
+  );
