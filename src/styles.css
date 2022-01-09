@@ -42,33 +42,6 @@ input {
   background-color: #1c87c9;
   color: #ffffff;
 }
-.card-deck {
-  margin-top: 5%;
-  text-align: center;
-  justify-content: space-evenly;
-}
-.Mon {
-  border: 1px solid red;
-  color: red;
-}
-.Tues {
-  border: 1px solid orange;
-}
-.Wed {
-  border: 1px solid #e8d734;
-}
-.Thurs {
-  border: 1px solid green;
-}
-.Fri {
-  border: 1px solid cyan;
-}
-.Sat {
-  border: 1px solid blue;
-}
-.Sun {
-  border: 1px solid #7e4ccb;
-}
 
 .local {
   border-radius: 100px;
@@ -253,4 +226,23 @@ a {
   top: -94.2809px;
   left: -94.2809px;
   transition-delay: 0.875s;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
