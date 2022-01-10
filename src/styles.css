@@ -242,11 +242,6 @@ a {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
-.card-deck {
-  margin-right: auto 250px; /* Added */
-  float: center; /* Added */
-  margin-bottom: 10px; /* Added */
-}
 
 #background-video {
   width: 100vw;
