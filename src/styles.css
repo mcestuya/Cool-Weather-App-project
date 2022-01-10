@@ -3,9 +3,9 @@
   border: 5px solid gray;
   margin-top: 80px;
   margin-bottom: 80;
-  margin-right: 150px;
   margin-left: 150px;
   padding: 50px;
+  max-width: 100%;
 }
 h1 {
   color: red;
@@ -230,8 +230,9 @@ a {
 
 .weather-forecast {
   margin-top: 20px;
+  margin-left: 50px;
   text-align: center;
-  color: #000;
+  margin-left: calc(50% - 200px);
 }
 
 .weather-forecast-date {
@@ -240,9 +241,14 @@ a {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.card-deck {
+  margin-right: auto 250px; /* Added */
+  float: center; /* Added */
+  margin-bottom: 10px; /* Added */
 }
