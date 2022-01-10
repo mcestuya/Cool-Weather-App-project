@@ -1,14 +1,13 @@
 .container-box {
   display: block;
-  border: 5px solid gray;
-  margin-top: 80px;
-  margin-bottom: 80;
   margin-left: 150px;
   padding: 50px;
-  max-width: 100%;
+  max-width: 80%;
 }
+
 h1 {
-  color: red;
+  color: white;
+  text-size-adjust: 10px;
   text-align: center;
 }
 h3 {
@@ -18,10 +17,7 @@ h4 {
   color: black;
   text-align: center;
 }
-h1 span {
-  background-color: #fce5e5;
-  margin: auto;
-}
+
 form {
   margin: auto;
   padding: 25px;
@@ -39,15 +35,15 @@ input {
 
 .submit {
   width: 70px;
-  background-color: #1c87c9;
-  color: #ffffff;
+  background-color: #448be3;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .local {
   border-radius: 100px;
   background-color: white;
   color: black;
-  border-width: thick;
+  border-width: thin;
 }
 
 .nobull {
@@ -230,9 +226,8 @@ a {
 
 .weather-forecast {
   margin-top: 20px;
-  margin-left: 50px;
   text-align: center;
-  margin-left: calc(50% - 200px);
+  justify-content: center;
 }
 
 .weather-forecast-date {
@@ -251,4 +246,16 @@ a {
   margin-right: auto 250px; /* Added */
   float: center; /* Added */
   margin-bottom: 10px; /* Added */
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }

@@ -49,13 +49,13 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row row-cols-5">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 5)
       forecastHTML =
         forecastHTML +
         `
-         <div class="col-2">
+         <div class="col">
                  <div class="weather-forecast-date">
                             ${formatDay(forecastDay.dt)}</div>
             <img src="http://openweathermap.org/img/wn/${
@@ -66,7 +66,6 @@ function displayForecast(response) {
                 )}°</span><span class="weather-forecast-min">  ${Math.round(
           forecastDay.temp.min
         )}°</span> </div>
-              </div>
                </div>
           `;
   });
@@ -139,7 +138,4 @@ if (h < 6)
   document.write(
     '<style type="text/css">body{background: url(src/evening.jpg) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}"></style>'
   );
-else if (h < 18)
-  document.write(
-    '<style type="text/css">body{background: url(src/morning.jpg)  no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}"></style>'
-  );
+else if (h < 18) document.write();
